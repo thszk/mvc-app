@@ -5,13 +5,13 @@ public class UniversidadeApplication {
         AlunoM aluno = new AlunoM();
 
         aluno.setRa(165478);
-        aluno.setCodigoCurso(130);
-        aluno.setGrade(2016);
-        aluno.setTurno("Noturno");
         aluno.setNome("Thiago");
+        aluno.setPeriodo("Noturno");
+        aluno.setTipoEntrada("PróUni");
+        aluno.setCodigoCurso(130);
+        aluno.setNomeCurso("Engenharia de Computação");
+        aluno.setGrade(2016);
 
-        System.out.println("nome: " + aluno.getNome());
-        System.out.println("ra: " + aluno.getRa());
-        System.out.println("turno: " + aluno.getTurno());
+        aluno.impressao();
     }
 }

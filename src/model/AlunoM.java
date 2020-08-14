@@ -2,10 +2,22 @@ package model;
 
 public class AlunoM {
     private int ra;
-    private int codigoCurso;
     private String nome;
-    private String turno;
+    private int codigoCurso;
+    private String nomeCurso;
     private int grade;
+    private String periodo;
+    private String tipoEntrada;
+
+    public void impressao() {
+        System.out.println("RA Aluno: " + this.getRa());
+        System.out.println("Nome: " + this.getNome());
+        System.out.println("Código do Curso: " + this.getCodigoCurso());
+        System.out.println("Nome do Curso: " + this.getNomeCurso());
+        System.out.println("Grade matriculada: " + this.getGrade());
+        System.out.println("Período de aula: " + this.getPeriodo());
+        System.out.println("Tipo entrada: " + this.getTipoEntrada());
+    }
 
     public int getRa() {
         return ra;
@@ -13,14 +25,6 @@ public class AlunoM {
 
     public void setRa(int ra) {
         this.ra = ra;
-    }
-
-    public int getCodigoCurso() {
-        return codigoCurso;
-    }
-
-    public void setCodigoCurso(int codigoCurso) {
-        this.codigoCurso = codigoCurso;
     }
 
     public String getNome() {
@@ -31,12 +35,20 @@ public class AlunoM {
         this.nome = nome;
     }
 
-    public String getTurno() {
-        return turno;
+    public int getCodigoCurso() {
+        return codigoCurso;
     }
 
-    public void setTurno(String turno) {
-        this.turno = turno;
+    public void setCodigoCurso(int codigoCurso) {
+        this.codigoCurso = codigoCurso;
+    }
+
+    public String getNomeCurso() {
+        return nomeCurso;
+    }
+
+    public void setNomeCurso(String nomeCurso) {
+        this.nomeCurso = nomeCurso;
     }
 
     public int getGrade() {
@@ -45,5 +57,21 @@ public class AlunoM {
 
     public void setGrade(int grade) {
         this.grade = grade;
+    }
+
+    public String getPeriodo() {
+        return periodo;
+    }
+
+    public void setPeriodo(String periodo) {
+        this.periodo = periodo;
+    }
+
+    public String getTipoEntrada() {
+        return tipoEntrada;
+    }
+
+    public void setTipoEntrada(String tipoEntrada) {
+        this.tipoEntrada = tipoEntrada;
     }
 }
