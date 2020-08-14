@@ -9,6 +9,16 @@ public class AlunoM {
     private String periodo;
     private String tipoEntrada;
 
+    public AlunoM(int ra, String nome, int codigoCurso, String nomeCurso, int grade, String periodo, String tipoEntrada) {
+        this.ra = ra;
+        this.nome = nome;
+        this.codigoCurso = codigoCurso;
+        this.nomeCurso = nomeCurso;
+        this.grade = grade;
+        this.periodo = periodo;
+        this.tipoEntrada = tipoEntrada;
+    }
+
     public void impressao() {
         System.out.println("RA Aluno: " + this.getRa());
         System.out.println("Nome: " + this.getNome());
