@@ -16,14 +16,14 @@ public class AlunoM {
         this.curso = curso;
     }
 
-    public void impressao() {
+    public void imprimir() {
         System.out.println("[ALUNO]");
         System.out.println("RA: " + this.getRa());
         System.out.println("Nome: " + this.getNome());
         System.out.println("Grade matriculada: " + this.getGrade());
         System.out.println("Tipo entrada: " + this.getTipoEntrada());
         System.out.println("[Curso]");
-        this.curso.impressao();
+        this.curso.imprimir();
     }
 
     public int getRa() {

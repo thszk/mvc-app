@@ -15,7 +15,7 @@ public class CursoM {
         this.totalCreditos = totalCreditos;
     }
 
-    public void impressao() {
+    public void imprimir() {
         System.out.println("Código: " + this.getCodigo());
         System.out.println("Nome: " + this.getNome());
         System.out.println("Turno: " + this.getTurno());
