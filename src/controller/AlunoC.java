@@ -11,8 +11,12 @@ public class AlunoC {
         this.alunos = new ArrayList<>();
     }
 
-    public void cadastro(AlunoM aluno) {
+    public void cadastrar(AlunoM aluno) {
         this.alunos.add(aluno);
+    }
+
+    public void remover(AlunoM aluno) {
+        this.alunos.remove(aluno);
     }
 
     public void imprimir() {

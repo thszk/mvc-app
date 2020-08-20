@@ -26,8 +26,15 @@ public class UniversidadeApplication {
                 engenhariaDeComputacao);
 
         AlunoC alunos = new AlunoC();
-        alunos.cadastro(alunoThiago);
-        alunos.cadastro(alunoJoao);
+
+        System.out.println("--> Cadastro");
+        alunos.cadastrar(alunoThiago);
+        alunos.cadastrar(alunoJoao);
+
+        alunos.imprimir();
+
+        System.out.println("--> Remoção");
+        alunos.remover(alunoJoao);
 
         alunos.imprimir();
     }
