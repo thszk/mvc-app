@@ -4,15 +4,15 @@ public class AlunoM {
     private int ra;
     private int grade;
     private String tipoEntrada;
-    private DadosPessoaisM dadosPessoais;
     private CursoM curso;
+    private DadosPessoaisM dadosPessoais;
 
-    public AlunoM(int ra, int grade, String tipoEntrada, DadosPessoaisM dadosPessoais, CursoM curso) {
+    public AlunoM(int ra, int grade, String tipoEntrada, CursoM curso, DadosPessoaisM dadosPessoais) {
         this.ra = ra;
         this.grade = grade;
         this.tipoEntrada = tipoEntrada;
-        this.dadosPessoais = dadosPessoais;
         this.curso = curso;
+        this.dadosPessoais = dadosPessoais;
     }
 
     public void imprimir() {
@@ -20,8 +20,8 @@ public class AlunoM {
         System.out.println("RA: " + this.getRa());
         System.out.println("Grade matriculada: " + this.getGrade());
         System.out.println("Tipo entrada: " + this.getTipoEntrada());
-        this.dadosPessoais.imprimir();
         this.curso.imprimir();
+        this.dadosPessoais.imprimir();
     }
 
     public int getRa() {

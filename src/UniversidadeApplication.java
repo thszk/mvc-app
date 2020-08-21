@@ -23,8 +23,8 @@ public class UniversidadeApplication {
                 165478,
                 2016,
                 "PROUNI",
-                dadosThiago,
-                engenhariaDeComputacao);
+                engenhariaDeComputacao,
+                dadosThiago);
 
         DadosPessoaisM dadosJoao = new DadosPessoaisM(
                 "Joao",
@@ -37,8 +37,8 @@ public class UniversidadeApplication {
                 166666,
                 2016,
                 "DESAFIO",
-                dadosJoao,
-                engenhariaDeComputacao);
+                engenhariaDeComputacao,
+                dadosJoao);
 
         AlunoC alunos = new AlunoC();
 
