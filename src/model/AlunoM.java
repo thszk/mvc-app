@@ -6,13 +6,15 @@ public class AlunoM {
     private String tipoEntrada;
     private CursoM curso;
     private DadosPessoaisM dadosPessoais;
+    private EnderecoM endereco;
 
-    public AlunoM(int ra, int grade, String tipoEntrada, CursoM curso, DadosPessoaisM dadosPessoais) {
+    public AlunoM(int ra, int grade, String tipoEntrada, CursoM curso, DadosPessoaisM dadosPessoais, EnderecoM endereco) {
         this.ra = ra;
         this.grade = grade;
         this.tipoEntrada = tipoEntrada;
         this.curso = curso;
         this.dadosPessoais = dadosPessoais;
+        this.endereco = endereco;
     }
 
     public void imprimir() {
@@ -22,6 +24,7 @@ public class AlunoM {
         System.out.println("Tipo entrada: " + this.getTipoEntrada());
         this.curso.imprimir();
         this.dadosPessoais.imprimir();
+        this.endereco.imprimir();
     }
 
     public int getRa() {
