@@ -16,6 +16,7 @@ public class CursoM {
     }
 
     public void imprimir() {
+        System.out.println("[Curso]");
         System.out.println("Código: " + this.getCodigo());
         System.out.println("Nome: " + this.getNome());
         System.out.println("Turno: " + this.getTurno());

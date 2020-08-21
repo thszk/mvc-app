@@ -1,6 +1,7 @@
 import controller.AlunoC;
 import model.AlunoM;
 import model.CursoM;
+import model.DadosPessoaisM;
 
 public class UniversidadeApplication {
     public static void main(String[] args) {
@@ -11,18 +12,32 @@ public class UniversidadeApplication {
                 10,
                 200);
 
+        DadosPessoaisM dadosThiago = new DadosPessoaisM(
+                "Thiago",
+                "05582135103",
+                "10/09/1998",
+                'M',
+                "thiago@email.com");
+
         AlunoM alunoThiago = new AlunoM(
                 165478,
-                "Thiago",
                 2016,
                 "PROUNI",
+                dadosThiago,
                 engenhariaDeComputacao);
+
+        DadosPessoaisM dadosJoao = new DadosPessoaisM(
+                "Joao",
+                "01234567891",
+                "02/07/1998",
+                'M',
+                "joao@email.com");
 
         AlunoM alunoJoao = new AlunoM(
                 166666,
-                "João",
                 2016,
                 "DESAFIO",
+                dadosJoao,
                 engenhariaDeComputacao);
 
         AlunoC alunos = new AlunoC();
