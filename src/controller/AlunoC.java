@@ -28,10 +28,10 @@ public class AlunoC {
     }
 
     public void imprimirPorRA(int ra) {
-        this.alunos.forEach(aluno -> {
-            if (aluno.getRa() == ra) {
-                aluno.imprimir();
-            }
-        });
+        Optional<AlunoM> resultado = this.alunos
+                .stream()
+                .filter(aluno -> aluno.getRa() == ra)
+                .findAny();
+        resultado.ifPresent(AlunoM::imprimir);
     }
 }
