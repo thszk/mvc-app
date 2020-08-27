@@ -3,6 +3,7 @@ package controller;
 import model.AlunoM;
 
 import java.util.ArrayList;
+import java.util.Optional;
 
 public class AlunoC {
     private ArrayList<AlunoM> alunos;
@@ -23,6 +24,14 @@ public class AlunoC {
         this.alunos.forEach(aluno -> {
             aluno.imprimir();
             System.out.println();
+        });
+    }
+
+    public void imprimirPorRA(int ra) {
+        this.alunos.forEach(aluno -> {
+            if (aluno.getRa() == ra) {
+                aluno.imprimir();
+            }
         });
     }
 }

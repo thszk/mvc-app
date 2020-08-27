@@ -73,5 +73,8 @@ public class UniversidadeApplication {
         alunos.remover(alunoJoao);
 
         alunos.imprimir();
+
+        System.out.println("--> Busca por RA");
+        alunos.imprimirPorRA(165478);
     }
 }
