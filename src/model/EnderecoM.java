@@ -6,14 +6,16 @@ public class EnderecoM {
     public String rua;
     public int numero;
     public String bairro;
+    public String cep;
     public String cidade;
     public String uf;
     public String complemento;
 
-    public EnderecoM(String rua, int numero, String bairro, String cidade, String uf, String complemento) {
+    public EnderecoM(String rua, int numero, String bairro, String cep,String cidade, String uf, String complemento) {
         this.rua = rua;
         this.numero = numero;
         this.bairro = bairro;
+        this.cep = cep;
         this.cidade = cidade;
         this.uf = uf;
         this.complemento = complemento;
@@ -51,6 +53,14 @@ public class EnderecoM {
 
     public void setBairro(String bairro) {
         this.bairro = bairro;
+    }
+
+    public String getCep() {
+        return cep;
+    }
+
+    public void setCep(String cep) {
+        this.cep = cep;
     }
 
     public String getCidade() {

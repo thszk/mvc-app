@@ -24,6 +24,7 @@ public class UniversidadeApplication {
                 "Cassilândia",
                 355,
                 "Monte Carlo",
+                "79022420",
                 "Campo Grande",
                 "MS",
                 null);
@@ -47,6 +48,7 @@ public class UniversidadeApplication {
                 "São Lourenço",
                 100,
                 "Tiradentes",
+                "79000000",
                 "Campo Grande",
                 "MS",
                 "AP 2, BL 5");
