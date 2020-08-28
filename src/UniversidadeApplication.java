@@ -1,11 +1,11 @@
 import controller.AlunoC;
-import model.AlunoM;
-import model.CursoM;
-import model.DadosPessoaisM;
-import model.EnderecoM;
+import controller.AlunoPosGraduacaoC;
+import model.*;
 
 public class UniversidadeApplication {
     public static void main(String[] args) {
+        System.out.println("---------------GRADUAÇÃO---------------");
+
         CursoM engenhariaDeComputacao = new CursoM(
                 130,
                 "Engenharia de Computação",
@@ -76,5 +76,21 @@ public class UniversidadeApplication {
 
         System.out.println("--> Busca por RA");
         alunos.imprimirPorRA(165478);
+
+        System.out.println("---------------PÓS GRADUAÇÃO---------------");
+
+        AlunoPosGraduacaoM alunoPosThiago = new AlunoPosGraduacaoM(
+                999999,
+                2020,
+                "PROUNI",
+                engenhariaDeComputacao,
+                dadosThiago,
+                enderecoThiago,
+                'D',
+                'U');
+
+        AlunoPosGraduacaoC alunoPosGraduacaoC = new AlunoPosGraduacaoC();
+        alunoPosGraduacaoC.cadastrar(alunoPosThiago);
+        alunoPosGraduacaoC.imprimir();
     }
 }
