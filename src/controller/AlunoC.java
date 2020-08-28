@@ -3,7 +3,6 @@ package controller;
 import model.AlunoM;
 
 import java.util.ArrayList;
-import java.util.Optional;
 
 public class AlunoC {
     private ArrayList<AlunoM> alunos;
@@ -28,10 +27,10 @@ public class AlunoC {
     }
 
     public void imprimirPorRA(int ra) {
-        Optional<AlunoM> resultado = this.alunos
+        this.alunos
                 .stream()
                 .filter(aluno -> aluno.getRa() == ra)
-                .findAny();
-        resultado.ifPresent(AlunoM::imprimir);
+                .findAny()
+                .ifPresent(AlunoM::imprimir);
     }
 }
